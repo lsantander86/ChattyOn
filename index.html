@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios de Chatbots con IA</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Servicios de Chatbots con IA</h1>
+            <p>Transforma tu negocio con la última tecnología en inteligencia artificial.</p>
+            <a href="#contacto" class="cta">Contáctanos</a>
+        </div>
+    </header>
+    <main>
+        <section id="beneficios" class="container">
+            <h2>¿Por qué elegir nuestros servicios?</h2>
+            <div class="beneficio">
+                <h3>Automatización</h3>
+                <p>Automatiza las consultas comunes y mejora la eficiencia de tu servicio al cliente.</p>
+            </div>
+            <div class="beneficio">
+                <h3>Disponibilidad 24/7</h3>
+                <p>Ofrece asistencia a tus clientes en cualquier momento del día, todos los días.</p>
+            </div>
+            <div class="beneficio">
+                <h3>Personalización</h3>
+                <p>Personaliza las respuestas para cada cliente y mejora la experiencia de usuario.</p>
+            </div>
+        </section>
+        <section id="contacto" class="container">
+            <h2>Contáctanos</h2>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Servicios de Chatbots con IA. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script type="text/javascript">
+        (function(d, t) {
+            var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+            v.onload = function() {
+              window.voiceflow.chat.load({
+                verify: { projectID: '666acffdd345ba9ca435884f' },
+                url: 'https://general-runtime.voiceflow.com',
+                versionID: 'production'
+              });
+            }
+            v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+        })(document, 'script');
+      </script>
+</body>
+</html>
